@@ -19,14 +19,14 @@ export default function KitchenCarPage() {
         title={kitchenCar.lead}
         description={kitchenCar.description}
         icon="🚚"
-        tone="orange"
+        tone="moss"
       />
 
       <section className="section-padding bg-white pt-0">
         <div className="mx-auto w-full max-w-content px-6 md:px-10">
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <h2 className="mb-4 text-sm font-bold tracking-widest text-brand-orange">
+              <h2 className="mb-4 text-sm font-bold tracking-widest text-brand-moss">
                 OPENING HOURS
               </h2>
               <div className="overflow-hidden rounded-xl2 border border-brand-navy/10">
@@ -52,14 +52,14 @@ export default function KitchenCarPage() {
                 {kitchenCar.hours.note}
               </p>
 
-              <h2 className="mb-4 mt-10 text-sm font-bold tracking-widest text-brand-orange">
+              <h2 className="mb-4 mt-10 text-sm font-bold tracking-widest text-brand-moss">
                 今後の展開予定
               </h2>
               <ul className="flex flex-wrap gap-2">
                 {kitchenCar.futureMenu.map((item) => (
                   <li
                     key={item}
-                    className="rounded-full bg-brand-orange-light px-4 py-1.5 text-xs font-semibold text-brand-navy/70"
+                    className="rounded-full bg-brand-moss-light px-4 py-1.5 text-xs font-semibold text-brand-navy/70"
                   >
                     {item}
                   </li>
@@ -68,7 +68,7 @@ export default function KitchenCarPage() {
             </div>
 
             <div>
-              <h2 className="mb-4 text-sm font-bold tracking-widest text-brand-orange">MENU</h2>
+              <h2 className="mb-4 text-sm font-bold tracking-widest text-brand-moss">MENU</h2>
               <MenuList />
             </div>
           </div>

@@ -29,21 +29,21 @@ export default function AccessSection() {
 
           <dl className="grid gap-6 self-start rounded-xl2 border border-brand-navy/10 bg-white p-8">
             <div>
-              <dt className="text-xs font-bold tracking-widest text-brand-orange">ADDRESS</dt>
+              <dt className="text-xs font-bold tracking-widest text-brand-moss">ADDRESS</dt>
               <dd className="mt-1 text-base text-brand-navy/80">{access.address}</dd>
             </div>
             <div>
-              <dt className="text-xs font-bold tracking-widest text-brand-orange">
+              <dt className="text-xs font-bold tracking-widest text-brand-moss">
                 OPENING HOURS
               </dt>
               <dd className="mt-1 text-base text-brand-navy/80">{access.openingHours}</dd>
             </div>
             <div>
-              <dt className="text-xs font-bold tracking-widest text-brand-orange">PARKING</dt>
+              <dt className="text-xs font-bold tracking-widest text-brand-moss">PARKING</dt>
               <dd className="mt-1 text-base text-brand-navy/80">{access.parking}</dd>
             </div>
             <div>
-              <dt className="text-xs font-bold tracking-widest text-brand-orange">
+              <dt className="text-xs font-bold tracking-widest text-brand-moss">
                 ACCESS INFO
               </dt>
               <dd className="mt-1 text-base text-brand-navy/80">

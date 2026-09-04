@@ -10,12 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         cream: {
-          DEFAULT: '#FBF6EC',
-          soft: '#F4EDDF',
+          DEFAULT: '#FAF8F2',
+          soft: '#F1EDE2',
         },
         brand: {
-          orange: '#E8792E',
-          'orange-light': '#F6D9B8',
+          moss: '#5B6E46',
+          'moss-light': '#E1E6D2',
           green: '#3E6B4F',
           'green-light': '#DCE8DA',
           navy: '#1F2A38',

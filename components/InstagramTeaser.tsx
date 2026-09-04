@@ -18,7 +18,7 @@ export default function InstagramTeaser() {
             key={topic}
             label={topic}
             icon={['☕', '🚚', '🪴', '🎉'][index % 4]}
-            tone={(['orange', 'green', 'navy', 'mixed'] as const)[index % 4]}
+            tone={(['moss', 'green', 'navy', 'mixed'] as const)[index % 4]}
             aspect="aspect-square"
           />
         ))}
@@ -27,7 +27,7 @@ export default function InstagramTeaser() {
         href={instagram.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-xs font-bold text-brand-navy/60 underline underline-offset-4 hover:text-brand-orange"
+        className="text-xs font-bold text-brand-navy/60 underline underline-offset-4 hover:text-brand-moss"
       >
         今日の様子をInstagramで見る({instagram.handle})
       </Link>

@@ -7,7 +7,7 @@ type ServiceCardProps = {
   title: string;
   description: string;
   icon?: string;
-  tone?: 'orange' | 'green' | 'navy' | 'mixed';
+  tone?: 'moss' | 'green' | 'navy' | 'mixed';
 };
 
 export default function ServiceCard({
@@ -25,7 +25,7 @@ export default function ServiceCard({
     >
       <PlaceholderImage label={eyebrow} icon={icon} tone={tone} aspect="aspect-[5/4]" />
       <div className="flex flex-1 flex-col gap-2 p-6">
-        <span className="text-xs font-bold tracking-widest text-brand-orange">
+        <span className="text-xs font-bold tracking-widest text-brand-moss">
           {eyebrow}
         </span>
         <h3 className="text-xl font-bold text-brand-navy">{title}</h3>

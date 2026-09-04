@@ -19,7 +19,7 @@ export default function InstagramSection() {
               key={topic}
               label={topic}
               icon={['☕', '🚚', '🪴', '⛺️', '🔨', '🎉', '🌤️'][index % 7]}
-              tone={(['orange', 'green', 'navy', 'mixed'] as const)[index % 4]}
+              tone={(['moss', 'green', 'navy', 'mixed'] as const)[index % 4]}
               aspect="aspect-square"
             />
           ))}

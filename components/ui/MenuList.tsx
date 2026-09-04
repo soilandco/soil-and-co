@@ -13,7 +13,7 @@ export default function MenuList() {
           key={group.category}
           className="rounded-xl2 border border-brand-navy/10 bg-white/70 p-6"
         >
-          <h3 className="mb-3 text-sm font-bold tracking-widest text-brand-orange">
+          <h3 className="mb-3 text-sm font-bold tracking-widest text-brand-moss">
             {group.category}
           </h3>
           <ul className="space-y-2">

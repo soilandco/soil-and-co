@@ -13,7 +13,7 @@ export default function CrossLinkSection({ page }: { page: keyof typeof crossLin
   return (
     <section className="section-padding bg-cream-soft">
       <div className="mx-auto w-full max-w-content px-6 md:px-10">
-        <p className="mb-8 text-center text-sm font-bold tracking-widest text-brand-orange">
+        <p className="mb-8 text-center text-sm font-bold tracking-widest text-brand-moss">
           {data.lead}
         </p>
         <div className="grid gap-4 sm:grid-cols-2">
@@ -21,7 +21,7 @@ export default function CrossLinkSection({ page }: { page: keyof typeof crossLin
             <Link
               key={item.href}
               href={item.href}
-              className="group flex items-center justify-between gap-4 rounded-xl2 border border-brand-navy/10 bg-white p-6 transition-colors hover:border-brand-orange"
+              className="group flex items-center justify-between gap-4 rounded-xl2 border border-brand-navy/10 bg-white p-6 transition-colors hover:border-brand-moss"
             >
               <div>
                 <p className="text-xs font-bold tracking-widest text-brand-green">
@@ -29,7 +29,7 @@ export default function CrossLinkSection({ page }: { page: keyof typeof crossLin
                 </p>
                 <p className="mt-1 text-sm text-brand-navy/70">{item.description}</p>
               </div>
-              <span className="text-brand-orange transition-transform group-hover:translate-x-1">
+              <span className="text-brand-moss transition-transform group-hover:translate-x-1">
                 →
               </span>
             </Link>

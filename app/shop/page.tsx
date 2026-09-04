@@ -19,7 +19,7 @@ export default function ShopPage() {
         title={shop.lead}
         description={shop.description}
         icon="🛍️"
-        tone="orange"
+        tone="moss"
       />
 
       <section className="section-padding bg-white pt-0">
@@ -30,7 +30,7 @@ export default function ShopPage() {
                 key={category}
                 label={category}
                 icon={['👕', '☕', '🪴'][index % 3]}
-                tone={(['orange', 'navy', 'green'] as const)[index % 3]}
+                tone={(['moss', 'navy', 'green'] as const)[index % 3]}
                 aspect="aspect-[5/4]"
               />
             ))}

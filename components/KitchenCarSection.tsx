@@ -12,7 +12,7 @@ export default function KitchenCarSection() {
         <SectionTitle eyebrow="PRIORITY 01 / KITCHEN CAR" title={kitchenCar.lead} align="center" />
 
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-          <PlaceholderImage label="常設キッチンカー" icon="🚚" tone="orange" aspect="aspect-[4/3]" />
+          <PlaceholderImage label="常設キッチンカー" icon="🚚" tone="moss" aspect="aspect-[4/3]" />
 
           <div className="flex flex-col gap-6">
             <p className="text-base leading-relaxed text-brand-navy/80">{kitchenCar.description}</p>

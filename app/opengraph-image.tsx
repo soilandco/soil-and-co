@@ -16,12 +16,12 @@ export default function OpengraphImage() {
           alignItems: 'center',
           justifyContent: 'center',
           gap: 24,
-          background: 'linear-gradient(135deg, #F6D9B8 0%, #FBF6EC 50%, #DCE8DA 100%)',
+          background: 'linear-gradient(135deg, #E1E6D2 0%, #FAF8F2 50%, #DCE8DA 100%)',
           padding: 80,
         }}
       >
         <div style={{ fontSize: 72, fontWeight: 900, color: '#1F2A38' }}>{siteConfig.name}</div>
-        <div style={{ fontSize: 36, fontWeight: 700, color: '#E8792E' }}>{siteConfig.tagline}</div>
+        <div style={{ fontSize: 36, fontWeight: 700, color: '#5B6E46' }}>{siteConfig.tagline}</div>
         <div style={{ fontSize: 24, color: '#1F2A38', opacity: 0.7 }}>
           {siteConfig.brandMessage.ja}
         </div>

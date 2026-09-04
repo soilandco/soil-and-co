@@ -9,7 +9,7 @@ export default function AboutSummarySection() {
   return (
     <section id="about" className="section-padding bg-brand-navy text-white">
       <div className="mx-auto flex w-full max-w-content flex-col items-center gap-8 px-6 text-center md:px-10">
-        <span className="text-xs font-bold tracking-widest text-brand-orange">ABOUT</span>
+        <span className="text-xs font-bold tracking-widest text-brand-moss">ABOUT</span>
         <h2 className="text-3xl font-bold md:text-4xl">{about.lead}</h2>
 
         <p className="text-lg leading-loose text-white/90">

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid w-full max-w-content gap-10 px-6 py-16 md:px-10 lg:grid-cols-[1.2fr,1fr,1fr]">
         <div className="flex flex-col gap-3">
           <span className="text-xl font-bold">
-            soil<span className="text-brand-orange">&amp;</span>co.
+            soil<span className="text-brand-moss">&amp;</span>co.
           </span>
           <p className="text-sm leading-relaxed text-white/70">{siteConfig.description}</p>
           <p className="pt-2 text-sm font-semibold tracking-wide text-white/90">
@@ -23,7 +23,7 @@ export default function Footer() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-white/80 transition-colors hover:text-brand-orange"
+              className="text-sm text-white/80 transition-colors hover:text-brand-moss"
             >
               {item.label}
             </Link>
@@ -37,13 +37,13 @@ export default function Footer() {
             href={instagram.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-semibold text-white/80 transition-colors hover:text-brand-orange"
+            className="text-sm font-semibold text-white/80 transition-colors hover:text-brand-moss"
           >
             Instagram {instagram.handle}
           </a>
           <Link
             href="/contact"
-            className="text-sm font-semibold text-white/80 transition-colors hover:text-brand-orange"
+            className="text-sm font-semibold text-white/80 transition-colors hover:text-brand-moss"
           >
             お問い合わせ
           </Link>

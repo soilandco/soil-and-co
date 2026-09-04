@@ -16,7 +16,7 @@ const discoverItems = [
     title: 'soil&co.を、暮らしの中へ。',
     description: 'オリジナルグッズ、コーヒー・植物関連の商品を取り扱っています。オンラインショップでも購入可能です。',
     icon: '🛍️',
-    tone: 'orange' as const,
+    tone: 'moss' as const,
   },
   {
     href: '/space',

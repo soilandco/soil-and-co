@@ -12,7 +12,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-brand-navy/5 bg-cream/90 backdrop-blur">
       <div className="mx-auto flex w-full max-w-content items-center justify-between px-6 py-4 md:px-10">
         <Link href="/" className="text-xl font-bold tracking-tight text-brand-navy" onClick={() => setOpen(false)}>
-          soil<span className="text-brand-orange">&amp;</span>co.
+          soil<span className="text-brand-moss">&amp;</span>co.
         </Link>
 
         {/* PC nav */}
@@ -21,7 +21,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold tracking-wide text-brand-navy/80 transition-colors hover:text-brand-orange"
+              className="text-sm font-semibold tracking-wide text-brand-navy/80 transition-colors hover:text-brand-moss"
             >
               {item.label}
             </Link>

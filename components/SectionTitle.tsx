@@ -27,7 +27,7 @@ export default function SectionTitle({
       {eyebrow && (
         <span
           className={`text-xs font-bold tracking-[0.2em] ${
-            light ? 'text-white/70' : 'text-brand-orange'
+            light ? 'text-white/70' : 'text-brand-moss'
           }`}
         >
           {eyebrow}

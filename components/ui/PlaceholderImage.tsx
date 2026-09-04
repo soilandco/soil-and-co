@@ -8,16 +8,16 @@
 type PlaceholderImageProps = {
   label: string;
   icon?: string;
-  tone?: 'orange' | 'green' | 'navy' | 'mixed';
+  tone?: 'moss' | 'green' | 'navy' | 'mixed';
   className?: string;
   aspect?: string; // Tailwindのaspect-*クラス
 };
 
 const toneStyles: Record<NonNullable<PlaceholderImageProps['tone']>, string> = {
-  orange: 'from-brand-orange-light via-cream to-brand-orange/30',
+  moss: 'from-brand-moss-light via-cream to-brand-moss/30',
   green: 'from-brand-green-light via-cream to-brand-green/20',
-  navy: 'from-brand-navy/10 via-cream to-brand-orange-light',
-  mixed: 'from-brand-orange-light via-brand-green-light to-cream',
+  navy: 'from-brand-navy/10 via-cream to-brand-moss-light',
+  mixed: 'from-brand-moss-light via-brand-green-light to-cream',
 };
 
 export default function PlaceholderImage({

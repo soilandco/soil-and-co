@@ -40,7 +40,7 @@ export default function EventPage() {
                   key={item.title}
                   className="rounded-xl2 border border-brand-navy/10 bg-cream-soft p-6"
                 >
-                  <p className="text-xs font-bold tracking-widest text-brand-orange">
+                  <p className="text-xs font-bold tracking-widest text-brand-moss">
                     {item.date}
                   </p>
                   <p className="mt-1 text-lg font-bold text-brand-navy">{item.title}</p>

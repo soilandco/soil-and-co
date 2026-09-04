@@ -24,7 +24,7 @@ export default function ContactSection() {
   return (
     <div className="grid gap-10 lg:grid-cols-[1fr,1.2fr]">
       <div className="flex flex-col gap-4 rounded-xl2 border border-brand-navy/10 bg-white p-8">
-        <h3 className="text-sm font-bold tracking-widest text-brand-orange">CONTACT INFO</h3>
+        <h3 className="text-sm font-bold tracking-widest text-brand-moss">CONTACT INFO</h3>
         <dl className="space-y-3 text-sm text-brand-navy/75">
           <div>
             <dt className="font-semibold text-brand-navy">Email</dt>
@@ -54,8 +54,8 @@ export default function ContactSection() {
                 aria-pressed={category === c}
                 className={`rounded-full px-4 py-2 text-xs font-bold transition-colors ${
                   category === c
-                    ? 'bg-brand-orange text-white'
-                    : 'bg-cream-soft text-brand-navy/70 hover:bg-brand-orange-light'
+                    ? 'bg-brand-moss text-white'
+                    : 'bg-cream-soft text-brand-navy/70 hover:bg-brand-moss-light'
                 }`}
               >
                 {c}
@@ -70,7 +70,7 @@ export default function ContactSection() {
             type="text"
             name="name"
             required
-            className="rounded-lg border border-brand-navy/15 px-4 py-2.5 text-sm font-normal outline-none focus:border-brand-orange"
+            className="rounded-lg border border-brand-navy/15 px-4 py-2.5 text-sm font-normal outline-none focus:border-brand-moss"
           />
         </label>
 
@@ -80,7 +80,7 @@ export default function ContactSection() {
             type="email"
             name="email"
             required
-            className="rounded-lg border border-brand-navy/15 px-4 py-2.5 text-sm font-normal outline-none focus:border-brand-orange"
+            className="rounded-lg border border-brand-navy/15 px-4 py-2.5 text-sm font-normal outline-none focus:border-brand-moss"
           />
         </label>
 
@@ -90,7 +90,7 @@ export default function ContactSection() {
             name="message"
             required
             rows={5}
-            className="resize-none rounded-lg border border-brand-navy/15 px-4 py-2.5 text-sm font-normal outline-none focus:border-brand-orange"
+            className="resize-none rounded-lg border border-brand-navy/15 px-4 py-2.5 text-sm font-normal outline-none focus:border-brand-moss"
           />
         </label>
 
@@ -98,7 +98,7 @@ export default function ContactSection() {
 
         <button
           type="submit"
-          className="mt-2 rounded-full bg-brand-orange px-7 py-3.5 text-sm font-bold text-white transition-colors hover:bg-brand-orange/90"
+          className="mt-2 rounded-full bg-brand-moss px-7 py-3.5 text-sm font-bold text-white transition-colors hover:bg-brand-moss/90"
         >
           送信する
         </button>

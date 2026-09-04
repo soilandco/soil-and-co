@@ -24,7 +24,7 @@ export default function SpaceSection() {
                 {feature.icon}
               </span>
               <div>
-                <p className="text-sm font-bold tracking-widest text-brand-orange">
+                <p className="text-sm font-bold tracking-widest text-brand-moss">
                   {feature.label}
                 </p>
                 <p className="text-sm text-white/70">{feature.description}</p>
