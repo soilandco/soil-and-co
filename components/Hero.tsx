@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
 import { siteConfig } from '@/lib/site-config';
 
 export default function Hero() {
@@ -28,13 +28,16 @@ export default function Hero() {
           </div>
         </div>
 
-        <PlaceholderImage
-          label="soil&co. 敷地の風景"
-          icon="☕️"
-          tone="mixed"
-          aspect="aspect-[4/3]"
-          className="shadow-soft"
-        />
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
+          <Image
+            src="/images/hero-feel-the-green.png"
+            alt="HEK CAFE(soil&co.のキッチンカー)のブランドビジュアル"
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
 import SectionTitle from '@/components/SectionTitle';
 import MenuList from '@/components/ui/MenuList';
 import InstagramTeaser from '@/components/InstagramTeaser';
@@ -12,7 +12,15 @@ export default function KitchenCarSection() {
         <SectionTitle eyebrow="PRIORITY 01 / KITCHEN CAR" title={kitchenCar.lead} align="center" />
 
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-          <PlaceholderImage label="常設キッチンカー" icon="🚚" tone="moss" aspect="aspect-[4/3]" />
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
+            <Image
+              src="/images/kitchen-car-brewing.png"
+              alt="HEK CAFEのスタッフがコーヒーを淹れている様子"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
 
           <div className="flex flex-col gap-6">
             <p className="text-base leading-relaxed text-brand-navy/80">{kitchenCar.description}</p>
