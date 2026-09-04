@@ -28,14 +28,14 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
+        <div className="relative aspect-video w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
           <Image
             src="/images/hero-feel-the-green.png"
             alt="HEK CAFE(soil&co.のキッチンカー)のブランドビジュアル"
             fill
             priority
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover"
+            className="object-contain"
           />
         </div>
       </div>
