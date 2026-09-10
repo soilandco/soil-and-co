@@ -56,31 +56,31 @@ export const kitchenCar = {
     {
       category: 'COFFEE',
       items: [
-        { name: 'ドリップコーヒー', price: '¥---' },
-        { name: 'エスプレッソ', price: '¥---' },
+        { name: 'ドリップコーヒー', price: '¥600' },
+        { name: 'エスプレッソ', price: '¥650' },
       ],
     },
     {
       category: 'CAFE LATTE',
       items: [
-        { name: 'カフェラテ', price: '¥---' },
-        { name: 'アイスカフェラテ', price: '¥---' },
+        { name: 'カフェラテ', price: '¥600' },
+        { name: 'アイスカフェラテ', price: '¥600' },
       ],
     },
     {
       category: 'SOFT DRINK',
-      items: [{ name: 'ソフトドリンク各種', price: '¥---' }],
+      items: [{ name: 'ソフトドリンク各種', price: '¥500' }],
     },
     {
       category: 'SWEETS',
-      items: [{ name: '焼き菓子・ケーキ(日替わり)', price: '準備中' }],
+      items: [{ name: '焼き菓子・ケーキ(日替わり)', price: '¥300〜' }],
     },
     {
       category: 'FOOD',
-      items: [{ name: 'フード(今後展開予定)', price: '準備中' }],
+      items: [{ name: 'ホットサンド', price: '¥500' }],
     },
   ],
-  futureMenu: ['焼き菓子', 'ケーキ', 'ハンバーガー', 'その他フード'],
+  futureMenu: ['ハンバーガー', 'その他フード'],
 };
 
 // ---------------------------------------------------------------------------
