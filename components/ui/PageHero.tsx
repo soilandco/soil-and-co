@@ -9,6 +9,9 @@ type PageHeroProps = {
   tone?: 'moss' | 'green' | 'navy' | 'mixed';
   imageSrc?: string;
   imageAlt?: string;
+  // 'cover'(既定): 枠いっぱいに写真を敷き詰める(実写真向け)
+  // 'contain': 余白を残して全体を収める(テキスト入りグラフィックなど、切れると困る画像向け)
+  imageFit?: 'cover' | 'contain';
 };
 
 /**
@@ -23,6 +26,7 @@ export default function PageHero({
   tone = 'mixed',
   imageSrc,
   imageAlt,
+  imageFit = 'cover',
 }: PageHeroProps) {
   return (
     <section className="section-padding pb-14 pt-16 md:pb-16">
@@ -39,7 +43,7 @@ export default function PageHero({
               alt={imageAlt ?? title}
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-contain"
+              className={imageFit === 'contain' ? 'object-contain' : 'object-cover'}
             />
           </div>
         ) : (
