@@ -1,4 +1,4 @@
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
+import Image from 'next/image';
 import SectionTitle from '@/components/SectionTitle';
 import { buildMetadata } from '@/lib/metadata';
 import { about, siteConfig } from '@/lib/site-config';
@@ -25,7 +25,15 @@ export default function AboutPage() {
               ))}
             </p>
           </div>
-          <PlaceholderImage label="soil&co.の日常" icon="🌱" tone="mixed" aspect="aspect-[4/3]" />
+          <div className="relative aspect-square w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
+            <Image
+              src="/images/about-daily-life.png"
+              alt="soil&co.の活動の様子(作業スペース、メンバー、ドリンクスタンド)"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
