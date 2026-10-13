@@ -46,8 +46,19 @@ export default function SpacePage() {
           </div>
 
           <div className="mt-10 flex flex-col items-center gap-4 rounded-xl2 border border-brand-navy/10 bg-cream-soft p-8 text-center">
+            <p className="text-xs font-bold tracking-widest text-brand-moss">
+              {rentalSpace.membership.phase}
+            </p>
+            <p className="text-2xl font-bold text-brand-navy">{rentalSpace.membership.price}</p>
             <p className="max-w-xl text-sm leading-relaxed text-brand-navy/70">
-              {rentalSpace.usageNote}
+              {rentalSpace.membership.includes}
+            </p>
+            <p className="max-w-xl text-sm leading-relaxed text-brand-navy/60">
+              {rentalSpace.membership.weekendNote}
+            </p>
+            <p className="text-xs text-brand-navy/50">{rentalSpace.membership.priceNote}</p>
+            <p className="max-w-xl text-sm leading-relaxed text-brand-navy/70">
+              {rentalSpace.membership.howToApply}
             </p>
             <Button href="/contact">レンタルスペースについて問い合わせる</Button>
           </div>
