@@ -19,6 +19,9 @@ export const topicImageMap: Record<string, string> = {
   'キッチンカー': '/images/insta-kitchen-car.png',
   '植物': '/images/insta-plants.png',
   'レンタルスペース': '/images/insta-rental-space.png',
+  'DIY': '/images/insta-diy.png',
+  'イベント': '/images/insta-event.png',
+  '日常': '/images/insta-daily.png',
 };
 
 export default function TopicImage({
