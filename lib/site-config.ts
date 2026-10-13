@@ -43,6 +43,8 @@ export const kitchenCar = {
   lead: '一杯のコーヒーから、soil&co.を。',
   description:
     'soil&co.の敷地内には、常設のキッチンカーがあります。コーヒーやカフェラテ、ソフトドリンクを中心に、焼き菓子やケーキなど、その時々のおいしいものを。自然の中でゆっくり過ごしながら、soil&co.の時間を楽しんでください。',
+  // KITCHEN CAR(HEK CAFE)専用のInstagramアカウント。soil&co.全体のアカウント(instagram.url)とは別。
+  instagramUrl: 'https://www.instagram.com/hek_design_soilandco',
   // 営業日・営業時間はここを書き換えるだけで全ページに反映されます。
   hours: {
     note: '営業日・営業時間は季節や天候により変動する場合があります。最新情報はInstagramをご確認ください。',

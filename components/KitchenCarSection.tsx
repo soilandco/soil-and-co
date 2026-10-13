@@ -3,7 +3,7 @@ import Button from '@/components/ui/Button';
 import SectionTitle from '@/components/SectionTitle';
 import MenuList from '@/components/ui/MenuList';
 import InstagramTeaser from '@/components/InstagramTeaser';
-import { kitchenCar, instagram } from '@/lib/site-config';
+import { kitchenCar } from '@/lib/site-config';
 
 export default function KitchenCarSection() {
   return (
@@ -31,7 +31,7 @@ export default function KitchenCarSection() {
 
             <div className="flex flex-wrap gap-4">
               <Button href="/kitchen-car">KITCHEN CARを見る</Button>
-              <Button href={instagram.url} variant="outline">
+              <Button href={kitchenCar.instagramUrl} variant="outline">
                 Instagramをチェック
               </Button>
             </div>
