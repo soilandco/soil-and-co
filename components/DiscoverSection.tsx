@@ -9,6 +9,7 @@ const discoverItems = [
     description: '植物・グリーンの販売。暮らしに寄り添う一鉢を見つけてください。',
     icon: '🪴',
     tone: 'green' as const,
+    imageSrc: '/images/card-plants.png',
   },
   {
     href: '/shop',
@@ -17,6 +18,7 @@ const discoverItems = [
     description: 'オリジナルグッズ、コーヒー・植物関連の商品を取り扱っています。オンラインショップでも購入可能です。',
     icon: '🛍️',
     tone: 'moss' as const,
+    imageSrc: '/images/card-goods.png',
   },
   {
     href: '/space',
@@ -25,6 +27,7 @@ const discoverItems = [
     description: 'BBQ、焚き火、テントサウナ、DIYなど、自然の中で自由な時間を。',
     icon: '⛺️',
     tone: 'navy' as const,
+    imageSrc: '/images/card-rental-space.png',
   },
 ];
 

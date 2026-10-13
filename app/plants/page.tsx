@@ -19,6 +19,8 @@ export default function PlantsPage() {
         description={plants.description}
         icon="🪴"
         tone="green"
+        imageSrc="/images/card-plants.png"
+        imageAlt="soil&co.の植物"
       />
 
       <section className="section-padding bg-white pt-0">

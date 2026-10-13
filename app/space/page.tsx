@@ -20,6 +20,8 @@ export default function SpacePage() {
         description={rentalSpace.description}
         icon="⛺️"
         tone="navy"
+        imageSrc="/images/card-rental-space.png"
+        imageAlt="自然の中で過ごすレンタルスペースの時間"
       />
 
       <section className="section-padding bg-white pt-0">

@@ -20,6 +20,8 @@ export default function ShopPage() {
         description={shop.description}
         icon="🛍️"
         tone="moss"
+        imageSrc="/images/card-goods.png"
+        imageAlt="soil&co.のオリジナルグッズ"
       />
 
       <section className="section-padding bg-white pt-0">
