@@ -137,12 +137,11 @@ export const shop = {
   description:
     'soil&co.オリジナルグッズ、コーヒー関連商品、植物関連商品などを取り扱っています。お店に来た記念に、あるいは大切な人へのギフトに。',
   categories: ['オリジナルグッズ', 'コーヒー関連商品', '植物関連商品'],
-  // オンラインショップ(BASEなど)への導線。
-  // TODO: プラットフォームとストアURLが決まり次第ここを書き換えてください。
+  // オンラインショップ(STORES)への導線。
   externalShop: {
-    platform: 'BASE',
-    url: '#', // TODO: BASEストアのURLを設定
-    label: 'オンラインショップ(BASE)で購入する',
+    platform: 'STORES',
+    url: 'https://RNstudio.shopselect.net',
+    label: 'オンラインショップ(STORES)で購入する',
     note: 'オリジナルグッズ・コーヒー関連商品・植物関連商品の一部は、外部ショップからオンラインでご購入いただけます。',
   },
 };
