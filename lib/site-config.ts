@@ -190,12 +190,15 @@ export const instagram = {
 // ---------------------------------------------------------------------------
 // ACCESS
 // ---------------------------------------------------------------------------
+const fullAddress = '京都府亀岡市畑野町千ヶ畑高橋3-56';
+
 export const access = {
-  address: '京都府亀岡市畑野町千ヶ畑高橋3-56',
+  address: fullAddress,
   openingHours: '土・日・祝 AM9:00〜PM17:00',
   parking: '8台',
-  googleMapsEmbedUrl: '', // TODO: Google MapsのiframeソースURLを設定
-  googleMapsUrl: '#', // TODO: Google MapsへのリンクURLを設定
+  // APIキー不要の検索埋め込み形式(住所から自動生成)。
+  googleMapsEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(fullAddress)}&output=embed`,
+  googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`,
   note: 'キッチンカーのご利用とレンタルスペースのご利用では入口が異なる場合があります。詳細は各ページをご確認ください。',
 };
 
