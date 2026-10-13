@@ -213,8 +213,8 @@ export const contactCategories = [
 ] as const;
 
 export const contactInfo = {
-  email: '[メールアドレス準備中]',
-  phone: '[電話番号準備中]',
+  email: 'hello@soilandco.jp',
+  phone: '090-5676-9354',
 };
 
 // ---------------------------------------------------------------------------

@@ -36,7 +36,7 @@ export default function ContactSection() {
           </div>
         </dl>
         <p className="text-xs leading-relaxed text-brand-navy/50">
-          お問い合わせ内容によって担当が異なるため、右のフォームからカテゴリーを選んでご連絡ください。
+          お問い合わせ内容によって担当が異なるため、フォームからカテゴリーを選んでご連絡ください。
         </p>
       </div>
 
