@@ -17,7 +17,7 @@ export default function EventSection() {
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl2 shadow-soft">
             <Image
               src="/images/event-hero.png"
-              alt="Music Forest - soil&co.のDJイベント"
+              alt="Music Forest - Soil&Co.のDJイベント"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"

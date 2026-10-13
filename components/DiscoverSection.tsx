@@ -14,7 +14,7 @@ const discoverItems = [
   {
     href: '/shop',
     eyebrow: 'GOODS',
-    title: 'soil&co.を、暮らしの中へ。',
+    title: 'Soil&Co.を、暮らしの中へ。',
     description: 'オリジナルグッズ、コーヒー・植物関連の商品を取り扱っています。オンラインショップでも購入可能です。',
     icon: '🛍️',
     tone: 'moss' as const,
@@ -38,7 +38,7 @@ export default function DiscoverSection() {
         <SectionTitle
           eyebrow="DISCOVER SOIL&CO."
           title="コーヒーだけじゃない。"
-          subtitle="soil&co.には、もう少し楽しみがあります。"
+          subtitle="Soil&Co.には、もう少し楽しみがあります。"
         />
 
         <div className="grid gap-6 md:grid-cols-3">

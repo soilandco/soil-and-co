@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="relative aspect-video w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
           <Image
             src="/images/hero-feel-the-green.png"
-            alt="HEK CAFE(soil&co.のキッチンカー)のブランドビジュアル"
+            alt="HEK CAFE(Soil&Co.のキッチンカー)のブランドビジュアル"
             fill
             priority
             sizes="(min-width: 1024px) 50vw, 100vw"

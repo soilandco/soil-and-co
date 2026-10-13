@@ -28,7 +28,7 @@ export default function AboutPage() {
           <div className="relative aspect-square w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
             <Image
               src="/images/about-daily-life.png"
-              alt="soil&co.の活動の様子(作業スペース、メンバー、ドリンクスタンド)"
+              alt="Soil&Co.の活動の様子(作業スペース、メンバー、ドリンクスタンド)"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"

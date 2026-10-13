@@ -20,7 +20,7 @@ export default function ShopPage() {
         icon="🛍️"
         tone="moss"
         imageSrc="/images/card-goods.png"
-        imageAlt="soil&co.のオリジナルグッズ"
+        imageAlt="Soil&Co.のオリジナルグッズ"
       />
 
       <section className="section-padding bg-white pt-0">

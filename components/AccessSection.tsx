@@ -5,7 +5,7 @@ export default function AccessSection() {
   return (
     <section id="access" className="section-padding bg-cream-soft">
       <div className="mx-auto w-full max-w-content px-6 md:px-10">
-        <SectionTitle eyebrow="ACCESS" title="soil&co.への行き方。" subtitle={access.note} />
+        <SectionTitle eyebrow="ACCESS" title="Soil&Co.への行き方。" subtitle={access.note} />
 
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="overflow-hidden rounded-xl2 bg-brand-navy/5">
@@ -15,7 +15,7 @@ export default function AccessSection() {
                 className="h-full min-h-[320px] w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="soil&co. Google Maps"
+                title="Soil&Co. Google Maps"
               />
             ) : (
               <div className="flex min-h-[320px] w-full flex-col items-center justify-center gap-2 text-brand-navy/40">

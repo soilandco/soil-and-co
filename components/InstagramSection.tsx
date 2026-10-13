@@ -9,7 +9,7 @@ export default function InstagramSection() {
       <div className="mx-auto w-full max-w-content px-6 md:px-10">
         <SectionTitle
           eyebrow="INSTAGRAM"
-          title="soil&co.の日常。"
+          title="Soil&Co.の日常。"
           subtitle={`コーヒー、キッチンカー、植物、レンタルスペース、DIY、イベントなど、日々の様子を${instagram.handle}で発信しています。`}
         />
 

@@ -39,7 +39,7 @@ export default function GardenSection() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl2 shadow-soft">
               <Image
                 src="/images/garden-section.png"
-                alt="soil&co. GARDENINGのブランドカード"
+                alt="Soil&Co. GARDENINGのブランドカード"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"

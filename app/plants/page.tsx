@@ -20,7 +20,7 @@ export default function PlantsPage() {
         icon="🪴"
         tone="green"
         imageSrc="/images/card-plants.png"
-        imageAlt="soil&co.の植物"
+        imageAlt="Soil&Co.の植物"
       />
 
       <section className="section-padding bg-white pt-0">
