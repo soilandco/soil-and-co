@@ -47,17 +47,16 @@ export const kitchenCar = {
   hours: {
     note: '営業日・営業時間は季節や天候により変動する場合があります。最新情報はInstagramをご確認ください。',
     schedule: [
-      { day: '月・火', open: '定休日', close: '' },
-      { day: '水〜金', open: '[準備中]', close: '[準備中]' },
-      { day: '土・日・祝', open: '[準備中]', close: '[準備中]' },
+      { day: '月〜金', open: '定休日', close: '' },
+      { day: '土・日・祝', open: '9:00', close: '17:00' },
     ],
   },
   menu: [
     {
       category: 'COFFEE',
       items: [
-        { name: 'ドリップコーヒー', price: '¥600' },
-        { name: 'エスプレッソ', price: '¥650' },
+        { name: 'ドリップコーヒー', price: '¥400' },
+        { name: 'エスプレッソ', price: '¥500' },
       ],
     },
     {
@@ -69,15 +68,15 @@ export const kitchenCar = {
     },
     {
       category: 'SOFT DRINK',
-      items: [{ name: 'ソフトドリンク各種', price: '¥500' }],
+      items: [{ name: 'ソフトドリンク各種', price: '¥500〜' }],
     },
     {
       category: 'SWEETS',
-      items: [{ name: '焼き菓子・ケーキ(日替わり)', price: '¥300〜' }],
+      items: [{ name: '焼き菓子(日替わり)', price: '¥300〜' }],
     },
     {
       category: 'FOOD',
-      items: [{ name: 'ホットサンド', price: '¥500' }],
+      items: [{ name: 'ホットサンド', price: '¥700' }],
     },
   ],
   futureMenu: ['ハンバーガー', 'その他フード'],
@@ -193,9 +192,9 @@ export const instagram = {
 // ACCESS
 // ---------------------------------------------------------------------------
 export const access = {
-  address: '[住所準備中]',
-  openingHours: '[営業時間は準備中。KITCHEN CARページをご確認ください]',
-  parking: '[駐車場情報準備中]',
+  address: '京都府亀岡市畑野町千ヶ畑高橋3-56',
+  openingHours: '土・日・祝 AM9:00〜PM17:00',
+  parking: '8台',
   googleMapsEmbedUrl: '', // TODO: Google MapsのiframeソースURLを設定
   googleMapsUrl: '#', // TODO: Google MapsへのリンクURLを設定
   note: 'キッチンカーのご利用とレンタルスペースのご利用では入口が異なる場合があります。詳細は各ページをご確認ください。',
