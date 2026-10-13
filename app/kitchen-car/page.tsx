@@ -22,7 +22,7 @@ export default function KitchenCarPage() {
         tone="moss"
         imageSrc="/images/insta-kitchen-car.png"
         imageAlt="HEK CAFEのキッチンカー出店スケジュール"
-        imageFit="contain"
+        imageAspect="aspect-square"
       />
 
       <section className="section-padding bg-white pt-0">

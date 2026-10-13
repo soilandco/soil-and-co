@@ -12,6 +12,8 @@ type PageHeroProps = {
   // 'cover'(既定): 枠いっぱいに写真を敷き詰める(実写真向け)
   // 'contain': 余白を残して全体を収める(テキスト入りグラフィックなど、切れると困る画像向け)
   imageFit?: 'cover' | 'contain';
+  // 画像枠の比率。既定は4:3。画像の実際の比率に合わせて変更できる(例: 正方形の画像なら 'aspect-square')
+  imageAspect?: string;
 };
 
 /**
@@ -27,6 +29,7 @@ export default function PageHero({
   imageSrc,
   imageAlt,
   imageFit = 'cover',
+  imageAspect = 'aspect-[4/3]',
 }: PageHeroProps) {
   return (
     <section className="section-padding pb-14 pt-16 md:pb-16">
@@ -37,7 +40,7 @@ export default function PageHero({
           <p className="text-base leading-relaxed text-brand-navy/75">{description}</p>
         </div>
         {imageSrc ? (
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
+          <div className={`relative w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft ${imageAspect}`}>
             <Image
               src={imageSrc}
               alt={imageAlt ?? title}
@@ -47,7 +50,7 @@ export default function PageHero({
             />
           </div>
         ) : (
-          <PlaceholderImage label={title} icon={icon} tone={tone} aspect="aspect-[4/3]" />
+          <PlaceholderImage label={title} icon={icon} tone={tone} aspect={imageAspect} />
         )}
       </div>
     </section>
