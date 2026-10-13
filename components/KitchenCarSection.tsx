@@ -14,8 +14,8 @@ export default function KitchenCarSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
           <div className="relative aspect-video w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
             <Image
-              src="/images/insta-kitchen-car.png"
-              alt="HEK CAFEのキッチンカー出店スケジュール"
+              src="/images/kitchen-car-brewing.png"
+              alt="HEK CAFEのスタッフがコーヒーを淹れている様子"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-contain"
