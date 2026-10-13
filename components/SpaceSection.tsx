@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
 import SectionTitle from '@/components/SectionTitle';
 import { rentalSpace } from '@/lib/site-config';
 
@@ -34,12 +34,15 @@ export default function SpaceSection() {
         </div>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2 lg:items-center">
-          <PlaceholderImage
-            label="レンタルスペースの様子"
-            icon="🔥"
-            tone="navy"
-            aspect="aspect-[16/10]"
-          />
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl2 shadow-soft">
+            <Image
+              src="/images/space-hero.png"
+              alt="レンタルスペースで食事を楽しむ様子"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
           <div className="flex flex-col items-start gap-4">
             <p className="text-sm leading-relaxed text-white/70">{rentalSpace.usageNote}</p>
             <Button href="/space" variant="primary">

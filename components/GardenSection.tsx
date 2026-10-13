@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
 import SectionTitle from '@/components/SectionTitle';
 import { garden } from '@/lib/site-config';
 
@@ -36,7 +36,15 @@ export default function GardenSection() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <PlaceholderImage label="庭のお手入れ" icon="🌿" tone="green" aspect="aspect-[4/3]" />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl2 shadow-soft">
+              <Image
+                src="/images/garden-section.png"
+                alt="soil&co. GARDENINGのブランドカード"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
