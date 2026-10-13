@@ -19,6 +19,8 @@ export default function GardenPage() {
         description={garden.description}
         icon="🌿"
         tone="green"
+        imageSrc="/images/garden-hero.png"
+        imageAlt="庭の手入れ・剪定・花壇の様子"
       />
 
       <section className="section-padding bg-white pt-0">

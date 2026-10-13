@@ -111,7 +111,7 @@ export const garden = {
   services: [
     { title: '庭のお手入れ', description: '日々のお手入れをまるごとサポート' },
     { title: '剪定', description: '木々の健康と見た目を整える' },
-    { title: '草刈り', description: '気持ちのよい庭を保つ' },
+    { title: '草刈り・空き家管理', description: '気持ちのよい庭を保つ' },
     { title: '植物の植え替え', description: '鉢植え・地植えの植え替え' },
     { title: '植栽', description: '庭に彩りをプラス' },
     { title: 'ガーデニング相談', description: '育て方・レイアウトのご相談' },
