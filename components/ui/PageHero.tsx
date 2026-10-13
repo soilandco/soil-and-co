@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import PlaceholderImage from '@/components/ui/PlaceholderImage';
 
 type PageHeroProps = {
@@ -6,10 +7,13 @@ type PageHeroProps = {
   description: string;
   icon?: string;
   tone?: 'moss' | 'green' | 'navy' | 'mixed';
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 /**
  * 各サービスページ共通のページ先頭ブロック。
+ * imageSrc を渡すとプレースホルダーの代わりに実写真を表示する。
  */
 export default function PageHero({
   eyebrow,
@@ -17,6 +21,8 @@ export default function PageHero({
   description,
   icon = '🌿',
   tone = 'mixed',
+  imageSrc,
+  imageAlt,
 }: PageHeroProps) {
   return (
     <section className="section-padding pb-14 pt-16 md:pb-16">
@@ -26,7 +32,19 @@ export default function PageHero({
           <h1 className="text-3xl font-bold leading-snug text-brand-navy md:text-4xl">{title}</h1>
           <p className="text-base leading-relaxed text-brand-navy/75">{description}</p>
         </div>
-        <PlaceholderImage label={title} icon={icon} tone={tone} aspect="aspect-[4/3]" />
+        {imageSrc ? (
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
+            <Image
+              src={imageSrc}
+              alt={imageAlt ?? title}
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-contain"
+            />
+          </div>
+        ) : (
+          <PlaceholderImage label={title} icon={icon} tone={tone} aspect="aspect-[4/3]" />
+        )}
       </div>
     </section>
   );

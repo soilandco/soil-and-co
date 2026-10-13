@@ -20,6 +20,8 @@ export default function KitchenCarPage() {
         description={kitchenCar.description}
         icon="🚚"
         tone="moss"
+        imageSrc="/images/insta-kitchen-car.png"
+        imageAlt="HEK CAFEのキッチンカー出店スケジュール"
       />
 
       <section className="section-padding bg-white pt-0">
