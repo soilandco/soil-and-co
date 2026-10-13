@@ -182,8 +182,8 @@ export const about = {
 // INSTAGRAM
 // ---------------------------------------------------------------------------
 export const instagram = {
-  url: 'https://www.instagram.com/soilandco/', // TODO: 実際のアカウントURLに差し替え
-  handle: '@soilandco', // TODO: 確定次第差し替え
+  url: 'https://www.instagram.com/soil_and_co',
+  handle: '@soil_and_co',
   topics: ['コーヒー', 'キッチンカー', '植物', 'レンタルスペース', 'DIY', 'イベント', '日常'],
 };
 
