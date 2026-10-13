@@ -30,7 +30,7 @@ export default function Hero() {
 
         <div className="relative aspect-video w-full overflow-hidden rounded-xl2 bg-cream-soft shadow-soft">
           <Image
-            src="/images/hero-brewing-vibes.png"
+            src="/images/hero-feel-the-green.png"
             alt="HEK CAFE(soil&co.のキッチンカー)のブランドビジュアル"
             fill
             priority
