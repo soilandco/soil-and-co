@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
+import TopicImage from '@/components/ui/TopicImage';
 import { instagram } from '@/lib/site-config';
 
 /**
@@ -14,9 +14,9 @@ export default function InstagramTeaser() {
     <div className="flex flex-col gap-3">
       <div className="grid grid-cols-4 gap-2">
         {preview.map((topic, index) => (
-          <PlaceholderImage
+          <TopicImage
             key={topic}
-            label={topic}
+            topic={topic}
             icon={['☕', '🚚', '🪴', '🎉'][index % 4]}
             tone={(['moss', 'green', 'navy', 'mixed'] as const)[index % 4]}
             aspect="aspect-square"

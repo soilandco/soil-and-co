@@ -1,5 +1,5 @@
 import Button from '@/components/ui/Button';
-import PlaceholderImage from '@/components/ui/PlaceholderImage';
+import TopicImage from '@/components/ui/TopicImage';
 import SectionTitle from '@/components/SectionTitle';
 import { instagram } from '@/lib/site-config';
 
@@ -15,9 +15,9 @@ export default function InstagramSection() {
 
         <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {instagram.topics.map((topic, index) => (
-            <PlaceholderImage
+            <TopicImage
               key={topic}
-              label={topic}
+              topic={topic}
               icon={['☕', '🚚', '🪴', '⛺️', '🔨', '🎉', '🌤️'][index % 7]}
               tone={(['moss', 'green', 'navy', 'mixed'] as const)[index % 4]}
               aspect="aspect-square"
