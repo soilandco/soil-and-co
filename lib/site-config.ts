@@ -140,7 +140,7 @@ export const shop = {
   // オンラインショップ(STORES)への導線。
   externalShop: {
     platform: 'STORES',
-    url: 'https://RNstudio.shopselect.net',
+    url: 'https://ENstudio.shopselect.net',
     label: 'オンラインショップ(STORES)で購入する',
     note: 'オリジナルグッズ・コーヒー関連商品・植物関連商品の一部は、外部ショップからオンラインでご購入いただけます。',
   },
