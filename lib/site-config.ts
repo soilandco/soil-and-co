@@ -231,6 +231,13 @@ export const contactCategories = [
 export const contactInfo = {
   email: 'hello@soilandco.jp',
   phone: '090-5676-9354',
+  /**
+   * お問い合わせフォームの送信先(Web3Forms)のアクセスキー。
+   * https://web3forms.com で hello@soilandco.jp を登録すると届くキーを貼り付けます。
+   * 公開しても問題ないキーです(送信先メールアドレスに紐づくだけ)。
+   * 空欄のあいだは、フォーム送信時にメール/電話での連絡を案内します。
+   */
+  formAccessKey: '',
 };
 
 // ---------------------------------------------------------------------------

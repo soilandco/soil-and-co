@@ -3,22 +3,54 @@
 import { FormEvent, useState } from 'react';
 import { contactCategories, contactInfo } from '@/lib/site-config';
 
+type Status = 'idle' | 'sending' | 'success' | 'error' | 'unconfigured';
+
 /**
  * お問い合わせフォーム。
- * TODO: 現時点では送信APIが未接続です。実際に送信できるようにするには、
- *   1) Next.jsのRoute Handler(app/api/contact/route.ts)を追加してメール送信サービス
- *      (Resend, SendGridなど)と連携する、または
- *   2) Formspree等のフォームSaaSのendpointをこのformのactionに指定する
- *  のいずれかで接続してください。
+ * Web3Forms(https://web3forms.com)経由で hello@soilandco.jp にメールで届きます。
+ * アクセスキーは lib/site-config.ts の contactInfo.formAccessKey で設定します。
  */
 export default function ContactSection() {
   const [category, setCategory] = useState<string>(contactCategories[0]);
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>('idle');
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: ここでAPIへの送信処理を実装してください。
-    setSubmitted(true);
+    const form = e.currentTarget;
+
+    if (!contactInfo.formAccessKey) {
+      setStatus('unconfigured');
+      return;
+    }
+
+    const data = new FormData(form);
+    // スパム対策(人間には見えない入力欄に値が入っていたら送信しない)
+    if (data.get('botcheck')) return;
+
+    const name = String(data.get('name') ?? '');
+    data.append('access_key', contactInfo.formAccessKey);
+    data.append('subject', `【Soil&Co. お問い合わせ】${category}(${name}様)`);
+    data.append('from_name', 'Soil&Co. ウェブサイト');
+    data.set('category', category);
+
+    setStatus('sending');
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: data,
+      });
+      const json = await res.json();
+      if (res.ok && json.success) {
+        setStatus('success');
+        form.reset();
+        setCategory(contactCategories[0]);
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   }
 
   return (
@@ -95,19 +127,40 @@ export default function ContactSection() {
         </label>
 
         <input type="hidden" name="category" value={category} />
+        <input
+          type="checkbox"
+          name="botcheck"
+          tabIndex={-1}
+          autoComplete="off"
+          className="hidden"
+          aria-hidden="true"
+        />
 
         <button
           type="submit"
-          className="mt-2 rounded-full bg-brand-moss px-7 py-3.5 text-sm font-bold text-white transition-colors hover:bg-brand-moss/90"
+          disabled={status === 'sending'}
+          className="mt-2 rounded-full bg-brand-moss px-7 py-3.5 text-sm font-bold text-white transition-colors hover:bg-brand-moss/90 disabled:cursor-wait disabled:opacity-60"
         >
-          送信する
+          {status === 'sending' ? '送信中…' : '送信する'}
         </button>
 
-        {submitted && (
-          <p className="text-sm font-semibold text-brand-green" role="status">
-            送信フォームは準備中です。お急ぎの場合は上記の連絡先までご連絡ください。
-          </p>
-        )}
+        <div aria-live="polite">
+          {status === 'success' && (
+            <p className="text-sm font-semibold text-brand-moss" role="status">
+              お問い合わせありがとうございます。内容を確認のうえ、折り返しご連絡いたします。
+            </p>
+          )}
+          {status === 'error' && (
+            <p className="text-sm font-semibold text-red-700" role="alert">
+              送信できませんでした。時間をおいて再度お試しいただくか、{contactInfo.email} までメールでご連絡ください。
+            </p>
+          )}
+          {status === 'unconfigured' && (
+            <p className="text-sm font-semibold text-brand-navy/70" role="status">
+              送信フォームは準備中です。お手数ですが {contactInfo.email} または {contactInfo.phone} までご連絡ください。
+            </p>
+          )}
+        </div>
       </form>
     </div>
   );
